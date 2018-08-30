@@ -64,8 +64,15 @@ top: 0px;
   
   
   
-         div id="loading">
+         <div id="loading">
 <div id="loading-center">
 <div id="loading-center-absolute">
 <div id="object"></div>
-</
+</div>
+<script>$(window).load(function() {
+	$("#loading-center").click(function() {
+	$("#loading").fadeOut(500);
+	})		
+});
+</script>
+	
