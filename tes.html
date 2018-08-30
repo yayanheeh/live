@@ -1,347 +1,119 @@
 
-
-     
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+                <title>RCTI - meTube.id Embed</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://www.metube.id/cc-content/themes/default/css/reset.css" />
+        <script src="https://www.metube.id/cc-content/themes/default/jwplayer/jwplayer.js?v=6"></script>
+        <script src="https://www.metube.id/cc-content/themes/default/jwplayer/jwplayer.compatibility.js"></script>
+        <script src="https://www.metube.id/cc-content/themes/default/js/jquery.min.js"></script>
+        <script>jwplayer.key = "j2tFQkEFvPeTpNOgV8NvBb31GHpjZ6SmevhMfX86rLQ=";</script>
+        <style type="text/css">
+            html, body, .video-unavailable, video, img, .video-js {
+                width:100% !important;
+                height:100% !important;
+                overflow:hidden;
+            }
+            .video-unavailable {
+                background-color:#000;
+                text-align:center;
+                color:#FFF;
+                font-size:16px;
+                font-family:arial,helvetica,sans-serif;
+            }
+            .video-unavailable p {
+                padding:50px;
+                line-height:1.5em;
+            }
+                        .jw-icon-next {
+                display: none !important;
+            }
+                    </style>
+    <body>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>RCTI | Rajawali Citra Televisi Indonesia</title>
+  ga('create', 'UA-85299917-1', 'auto');
+  ga('require', 'linkid');
+        ga('set', 'dimension1', '0');
+    ga('set', 'dimension2', '1535643394.9338');
+    ga('send', 'pageview');
 
-    <!-- Bootstrap -->
-    <link href="https://www.rcti.tv/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://www.rcti.tv/vendors/bootstrap/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://www.rcti.tv/vendors/slick/slick.css" rel="stylesheet">
-    <link href="https://www.rcti.tv/vendors/slick/slick-theme.css" rel="stylesheet">
-    <link href="https://www.rcti.tv/css/style.min.css" rel="stylesheet">
-    <link href="https://www.rcti.tv/css/extend.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.rcti.tv/vendors/fancybox3/dist/jquery.fancybox.css" type="text/css" media="screen" />
-	<link rel="shortcut icon" href="https://www.rcti.tv/img/favicon.png">
-
-    <script src="http://cdn.okezone.com/underwood/js/jquery-1.8.0.min.js"></script>
-    <script src="http://cdn.okezone.com/underwood/js/widget/okzwidget_type2.js"></script>
-
-        <link rel="stylesheet" href="vendors/jquery/jquery-ui.css">
-    <style>
-        .hjamtayang {
-            background-color: #075fb3;
-        }
-
-        .hprogram {
-            background-color: #054078;
-            padding-left: 15px !important;
-        }
-
-        .rjamtayang {
-            background-color: #549EC1;
-        }
-
-        .rprogram {
-            background-color: #3B90B7;
-            padding-left: 15px !important;
-        }
-
-        .ui-datepicker-prev {
-            display: none;
-        }
-
-        .ui-datepicker-next {
-            display: none;
-        }
-    </style>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-<nav class="navbar navbar-inverse main-nav" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-brand" href="#">
-            <a href="https://www.rcti.tv" class="logo">
-                <img src="http://webcms.mncgroup.com/timthumb.php?zc=3&amp;w=190&amp;h=65&amp;src=/app/webroot/files/rctitv/rcti%2029.png" alt="">
-            </a>
-        </div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs</a>
-                <div class="dropdown-menu">
-                    <div class="row">
-                                                    <div class="col-md-3">
-                                <h3>Drama &amp; Movies</h3>
-                                <ul>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/dunia-terbalik">DUNIA TERBALIK</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/tukang-ojek-pengkolan">TUKANG OJEK PENGKOLAN</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/si-doel-anak-gedongan">SI DOEL ANAK GEDONGAN</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/hitman-agent-47">HITMAN : AGENT 47</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/guardians-of-the-galaxy">GUARDIANS OF THE GALAXY</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/cinta-yang-hilang">CINTA YANG HILANG</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/semua-indah-karena-cinta">SEMUA INDAH KARENA CINTA</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/preman-pensiun">PREMAN PENSIUN 2</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/ob">OB OK</a>
-                                        </li>
-                                                                    </ul>
-                            </div>
-                                                    <div class="col-md-3">
-                                <h3>Entertainment</h3>
-                                <ul>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/silet">SILET</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/go-spot">GO SPOT</a>
-                                        </li>
-                                                                    </ul>
-                            </div>
-                                                    <div class="col-md-3">
-                                <h3>Kids</h3>
-                                <ul>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/new-kiko">KIKO SEASON 2</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/doraemon">DORAEMON</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/zakstorm">ZAK STORM</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/disney-club-ducktales">DISNEY CLUB DUCKTALES</a>
-                                        </li>
-                                                                    </ul>
-                            </div>
-                                                    <div class="col-md-3">
-                                <h3>News &amp; Sport</h3>
-                                <ul>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/seputar-inews-pagi">SEPUTAR INEWS PAGI</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/seputar-inews-siang">SEPUTAR INEWS SIANG</a>
-                                        </li>
-                                                                            <li>
-                                            <a href="https://www.rcti.tv/program/seputar-inews-malam">SEPUTAR INEWS MALAM </a>
-                                        </li>
-                                                                    </ul>
-                            </div>
-                                            </div>
-                </div>
-            </li>
-            <li><a href="#" data-toggle="dropdown">About Us</a>
-                <ul class="dropdown-menu">
-                    <li><a href="https://www.rcti.tv/about">ABOUT RCTI</a></li>
-                    <li><a href="https://www.rcti.tv/press-release">PRESS RELEASE</a></li>
-                    <li><a href="https://www.rcti.tv/rewards/rewards-achievements">REWARDS & ACHIEVEMENTS</a></li>
-                    <li><a href="http://www.jobsmnc.co.id/" target="_blank">CAREER</a></li>
-                </ul>
-            </li>
-            <li><a href="https://www.rcti.tv/livetv" style="margin: 0; padding: 0;"><img src="https://www.rcti.tv/img/live.gif"
-                                                                                    height="50"> </a></li>
-            <li><a href="https://www.rcti.tv/event">Event</a></li>
-            <li><a href="https://www.rcti.tv/quiz">Quiz</a></li>
-            <li><a href="https://www.rcti.tv/contact">Contact Us</a></li>
-            <li><a href="https://www.rcti.tv/updates">Updates</a></li>
-            <li><a href="https://www.rcti.tv/csr">CSR</a></li>
-            
-        </ul>
-        <form class="navbar-form navbar-right search" role="search" type="get" action="https://www.rcti.tv/updates">
-            <div class="inner-addon right-addon">
-                <i class="glyphicon glyphicon-search"></i>
-                <input type="text" name="q" class="form-control" placeholder="Search">
-            </div>
-        </form>
-    </div><!-- /.navbar-collapse -->
-</nav>
-
-    <div class="page-title full-height quiz">
-        <div class="container">
-            <div class="col-md-3">
-                <h2>Jadwal Acara</h2>
-                <div class="row">
-                    <div class="container">
-                        <div id="datepicker"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <h2 class="judulTanggal">30 August 2018</h2>
-                <div class="row">
-                    <div class="container col-md-12">
-                        <table class="table-condensed col-md-12">
-                            <thead>
-                            <tr>
-                                <th style="text-align: center;" class="col-md-3 hjamtayang">
-                                    JAM TAYANG
-                                </th>
-                                <th class="col-md-9 hprogram">
-                                    PROGRAM
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody class="eventlist">
-
-                            </tbody>
-                        </table>
-                        * Jadwal dapat berubah sewaktu-waktu
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<div id="footer">
-    <div class="container">
-        <div class="inner">
-            <ul class="left">
-                                    <li style="margin-right:10px"><a href="https://twitter.com/OfficialRCTI" target="_blank"><img height="16" src="http://webcms.mncgroup.com/files/rctitv/socials/twitter.png"></a></li>
-                                    <li style="margin-right:10px"><a href="https://www.facebook.com/OfficialRCTI.TV/" target="_blank"><img height="16" src="http://webcms.mncgroup.com/files/rctitv/socials/facebook.png"></a></li>
-                                    <li style="margin-right:10px"><a href="https://www.instagram.com/officialrcti/" target="_blank"><img height="16" src="http://webcms.mncgroup.com/files/rctitv/socials/instagram.png"></a></li>
-                                    <li style="margin-right:10px"><a href="http://rctimobile.com/" target="_blank"><img height="16" src="http://webcms.mncgroup.com/files/rctitv/socials/sindo.png"></a></li>
-                                    <li style="margin-right:10px"><a href="https://www.metube.id/channel/40/" target="_blank"><img height="16" src="http://webcms.mncgroup.com/files/rctitv/socials/metube.png"></a></li>
-                                    <li style="margin-right:10px"><a href="https://www.youtube.com/user/RCTIOfficialChannel" target="_blank"><img height="16" src="http://webcms.mncgroup.com/files/rctitv/socials/youtube.png"></a></li>
-                                    <li style="margin-right:10px"><a href="https://www.okezone.com" target="_blank"><img height="16" src="http://webcms.mncgroup.com/files/rctitv/socials/logo-okezone_1.png"></a></li>
-                            </ul>
-            <a data-fancybox data-type="iframe" data-src="http://webcms.mncgroup.com/weblist" href="javascript:;">
-                <img src="https://www.rcti.tv/img/footer_new.gif" alt="" class="pull-right" style="height: 30px">
-            </a>
-        </div>
-    </div>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://www.rcti.tv/vendors/bootstrap/js/bootstrap.min.js"></script>
-    
-    <script src="https://www.rcti.tv/vendors/jquery/jquery-ui.js"></script>
-
-    <script type="text/javascript">
-        $(function () {
-
-            var d = new Date(),
-                month = '' + (d.getMonth() + 1),
-                day = '' + d.getDate(),
-                year = d.getFullYear();
-            if (month.length < 2) month = '0' + month;
-            if (day.length < 2) day = '0' + day;
-            var firstDate = [year, month, day].join('-');
-            var token = 'YypCDUDo4tN4gDQT7MmICdUYidF2gJSbFRBVaXTU';
-
-            $.ajax({
-                type: "post",
-                dataType: "json",
-                url: "https://www.rcti.tv/schedule/data",
-//                url: "http://webcms.mncgroup.com/api_jadwal_rctitv.php",
-                data: {
-                    date: firstDate,
-                    _token: token
-                },
-                success: function (data) {
-                    $('tbody.eventlist').html('');
-                    var startHeight = 456;
-                    $.each(data, function (id, value) {
-                        startHeight = startHeight + 20;
-                        var time = value.START_TIME.substr(0, 2) + ':' + value.START_TIME.substr(2, 2) + ':' + value.START_TIME.substr(4, 2);
-                        var uptotime = value.END_TIME.substr(0, 2) + ':' + value.END_TIME.substr(2, 2) + ':' + value.END_TIME.substr(4, 2);
-                        $('tbody.eventlist').append(
-                            '                            <tr>\n' +
-                            '                                <td style="text-align: center;" class="col-md-3 rjamtayang">' + time + ' - ' + uptotime + '</td>\n' +
-                            '                                <td class="col-md-9 rprogram">' + value.FILM_POC_TITLE + '</td>\n' +
-                            '                            </tr>'
-                        );
-                    });
-                    $('.page-title').css({'height': startHeight + "px"});
-                },
-                error: function () {
-                    alert('Failed to load data.');
-                }
-            });
-
-            $("#datepicker").datepicker({
-                changeMonth: false,
-                changeYear: false,
-                stepMonths: 0,
-                dateFormat: 'yy-mm-dd',
-                onSelect: function (date) {
-                    $.ajax({
-                        type: "post",
-                        dataType: "json",
-                        url: "https://www.rcti.tv/schedule/data",
-//                        url: "http://webcms.mncgroup.com/api_jadwal_rctitv.php",
-                        data: {
-                            date: date,
-                            _token: token
-                        },
-                        success: function (data) {
-                            var newdate = new Date(date),
-                                nmonth = '' + (newdate.getMonth() + 1),
-                                nday = '' + newdate.getDate(),
-                                nyear = newdate.getFullYear();
-
-                            var m_names = ['', "January", "February", "Maret",
-                                "April", "May", "June", "July", "August", "September",
-                                "October", "November", "December"];
-                            if (nday < 10) {
-                                nday = '0' + nday;
-                            }
-
-                            $('.judulTanggal').html([nday, m_names[nmonth], nyear].join(' '));
-
-                            $('tbody.eventlist').html('');
-                            var startHeight = 456;
-                            $.each(data, function (id, value) {
-                                startHeight = startHeight + 20;
-                                var time = value.START_TIME.substr(0, 2) + ':' + value.START_TIME.substr(2, 2) + ':' + value.START_TIME.substr(4, 2);
-                                var uptotime = value.END_TIME.substr(0, 2) + ':' + value.END_TIME.substr(2, 2) + ':' + value.END_TIME.substr(4, 2);
-                                $('tbody.eventlist').append(
-                                    '                            <tr>\n' +
-                                    '                                <td style="text-align: center;" class="col-md-3 rjamtayang">' + time + ' - ' + uptotime + '</td>\n' +
-                                    '                                <td class="col-md-9 rprogram">' + value.FILM_POC_TITLE + '</td>\n' +
-                                    '                            </tr>'
-                                );
-                            });
-                            $('.page-title').css({'height': startHeight + "px"});
-                        },
-                        error: function () {
-                            alert('Failed to load data.');
+</script>        
+            <div id="myElement"></div>
+            <script>
+                jwplayer('myElement').setup({
+                                        playlist: [{
+                            file: 'https://cdn-livetv2.metube.id/hls/rcti.m3u8',
+                            image: "https://cdn-static.metube.id/live/image/sxssZAFhMbybYe3C3z6M.jpg",
+                            title: 'RCTI',
+                            mediaid: '1'
+                        }, {
+                            file: '',
+                            image: "https://cdn-static.metube.id/live/image/sxssZAFhMbybYe3C3z6M.jpg",
+                            title: 'RCTI',
+                            mediaid: '2'
+                        }, {
+                            file: '',
+                            image: "https://cdn-static.metube.id/live/image/sxssZAFhMbybYe3C3z6M.jpg",
+                            title: 'RCTI',
+                            mediaid: '3'
+                        }, {
+                            file: '',
+                            image: "https://cdn-static.metube.id/live/image/sxssZAFhMbybYe3C3z6M.jpg",
+                            title: 'RCTI',
+                            mediaid: '4'
+                        }, {
+                            file: '',
+                            image: "https://cdn-static.metube.id/live/image/sxssZAFhMbybYe3C3z6M.jpg",
+                            title: 'RCTI',
+                            mediaid: '5'
+                        }],
+                                        width: "100%",
+                    aspectratio: "16:9",
+                    abouttext: 'idfriendz.com',
+                                        stretching: "exactfit",
+                                                            aboutlink: 'http://www.idfriendz.com',
+                    autostart: false,
+                    androidhls: true,
+                    displaydescription: true,
+                    displaytitle: true,
+                    visualplaylist: false,
+                    skin: {"active": "#DF2148", "inactive": "#CCCCCC", "name": "glow"},
+                    plugins: {
+                                            "https://www.metube.id/cc-content/themes/default/js/ping.js": {"pixel": "http://content.jwplatform.com/ping.gif"}
+                    },
+                                                            advertising: {
+                      client: "googima",
+                      schedule: {
+                        preroll: {
+                          offset: "pre",
+                          tag: "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/21705426382/1.1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https%3A%2F%2Fwww.metube.id%2Flive%2FRCTI&description_url=https%3A%2F%2Fwww.metube.id%2Flive%2FRCTI&cust_params=Live%3D1"
                         }
-                    });
-                }
-            });
-        });
-    </script>
-</body>
+                      }
+                    },
+                                        ga: {
+                                                "idstring": "RCTI",
+                        "label": "1"
+                                            }
+                });
+                jwplayer('myElement').on('error', function () {
+                                    if (jwplayer('myElement').getPlaylistIndex() >= (jwplayer('myElement').getPlaylist().length - 1)) {
+                        $('#player-play').html('<img width="100%" height="431.44" src="https://www.metube.id/cc-content/themes/default/images/metube_error_player.jpg" alt="meTube error player"/>');
+                    } else {
+                        jwplayer('myElement').next();
+                    }
+                                });
+                jwplayer('myElement').on('play', function () {
+                                     });
+                
+            </script>
+            <!-- END VIDEO -->
+
+        
+    </body>
+</html>
