@@ -1,0 +1,69 @@
+ 
+   
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kompas Tv Iive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #EEEEEE;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    //width: 32px;
+    //height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    //background: url('https://yayanh.github.io/live/30.gif') no-repeat 50% 50%;
+    //margin: -16px 0 0 -16px;
+	color: #fff;
+	transform:translate(-50%, -50%);
+}
+</style>
+
+  
+  </head>
+  
+  <body>
+	  <div id="page-preloader"><span class="spinner"><img src="https://raw.githubusercontent.com/yayanheeh/live/master/loader.gif">&nbsp;<font color="black"><b>Loading...</b></font></span></div>
+
+<div class="jumbotron text-center">
+  
+  <div class="embed-responsive embed-responsive-16by9"> <iframe src="https://www.metube.id/embed/248/?type=live&autoplay=true" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+  <hr/><p align="left"> <img src="https://png.icons8.com/color/30/000000/play.png"> Kompas Tv live</p>
+  </div> 
+</div>
+  <br/><br/><center>  <a href="http://yayanheeh.github.io/live/masukan.html" class="btn btn-success" role="button">Masukan</a> </center>
+</div>
+
+<script>
+$(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+</script>
+
+</body>
+
+  
+</html>
+
+    
+
