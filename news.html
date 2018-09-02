@@ -1,21 +1,45 @@
 
-<title>News</title>
-<body>
-<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-<script> 
-$(function(){
-  $("#header").load("https://yayanheeh.github.io/live/header.html"); 
-  $("#footer").load("https://yayanheeh.github.io/live/footer.html"); 
-});
-</script> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #EEEEEE;
+    z-index: 100500;
+}
+#page-preloader .spinner {
+    //width: 32px;
+    //height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    //background: url('https://yayanh.github.io/live/30.gif') no-repeat 50% 50%;
+    //margin: -16px 0 0 -16px;
+	color: #fff;
+	transform:translate(-50%, -50%);
+}
+</style>
 
-<div id="header"></div>
   
+  </head>
+  
+  <body>
+	  <div id="page-preloader"><span class="spinner"><img src="https://raw.githubusercontent.com/yayanheeh/live/master/loader.gif">&nbsp;<font color="black"><b>Loading...</b></font></span></div>
 
+<div class="jumbotron text-center">
+  
   <h2>Chanel Tv Online</h2>
   <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>            
   <table class="table table-bordered">
@@ -46,7 +70,21 @@ $(function(){
       
     </tbody>
   </table>
+</div>
 
-    
-<div id="footer"></div>
+<script>
+$(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+</script>
+
 </body>
+
+  
+</html>
+
+
+
