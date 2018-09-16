@@ -1,146 +1,61 @@
 
-<!DOCTYPE html>
+
+	
+	
+	
+	
+	
+	<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>News</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<style>
-#page-preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #EEEEEE;
-    z-index: 100500;
-}
-#page-preloader .spinner {
-    //width: 32px;
-    //height: 32px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    //background: url('https://yayanh.github.io/live/30.gif') no-repeat 50% 50%;
-    //margin: -16px 0 0 -16px;
-	color: #fff;
-	transform:translate(-50%, -50%);
-}
-</style>
-<style>
-body {
-    background-color:#300451;
-}
-</style>
-  
-  </head>
-  
-  <body>
-	  <div id="page-preloader"><span class="spinner"><img src="https://raw.githubusercontent.com/yayanheeh/live/master/loader.gif">&nbsp;<font color="black"><b>Loading...</b></font></span></div>
-	 
-         <style>
-div.scrollmenu {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-    background-color: #777;
-}
-</style>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="scrollmenu">
-  <a href="#home">       
-  <img src="https://yayanheeh.github.io/live/logo/gtv.jpg" class="img-circle" alt="Cinque Terre" width="70" height="70"> </a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="#support">Support</a>
-  <a href="#blog">Blog</a>
-  <a href="#tools">Tools</a>  
-  <a href="#base">Base</a>
-  <a href="#custom">Custom</a>
-  <a href="#more">More</a>
-  <a href="#logo">Logo</a>
-  <a href="#friends">Friends</a>
-  <a href="#partners">Partners</a>
-  <a href="#people">People</a>
-  <a href="#work">Work</a>
+<div class="container">
+  <h2>Filterable List</h2>
+  <p>Type something in the input field to search the list for specific items:</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <ul class="list-group" id="myList">
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/global"><img src="https://yayanheeh.github.io/live/logo/gtv.jpg" width="100" height="50"></a>
+        </li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/rtv"><img src="https://yayanheeh.github.io/live/logo/rtv.jpg" width="100" height="50"></a></li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/rcti"><img src="https://yayanheeh.github.io/live/logo/rcti.jpg" width="100" height="50"></a></li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/tvri"><img src="https://yayanheeh.github.io/live/logo/tvri.jpg" width="100" height="50"></a></li>
+	  <li class="list-group-item"><a href="https://yayanheeh.github.io/live/antv"><img src="https://yayanheeh.github.io/live/logo/antv.jpg" width="100" height="50"></a></li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/sctv"><img src="https://yayanheeh.github.io/live/logo/sctv.jpg" width="100" height="50"></a></li>
+	  <li class="list-group-item"><a href="https://yayanheeh.github.io/live/tvone"><img src="https://yayanheeh.github.io/live/logo/tvone.jpg" width="100" height="50"></a></li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/trans"><img src="https://yayanheeh.github.io/live/logo/trans.jpg" width="100" height="50"></a></li>
+	  <li class="list-group-item"><a href="https://yayanheeh.github.io/live/inews"><img src="https://yayanheeh.github.io/live/logo/inews.jpg" width="100" height="50"></a></li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/mnc"><img src="https://yayanheeh.github.io/live/logo/mnc.jpg" width="100" height="50"></a></li>
+	  <li class="list-group-item"><a href="https://yayanheeh.github.io/live/metro"><img src="https://yayanheeh.github.io/live/logo/metro.jpg" width="100" height="50"></a></li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/trans7"><img src="https://yayanheeh.github.io/live/logo/trans7.jpg" width="100" height="50"></a></li>
+	  <li class="list-group-item"><a href="https://yayanheeh.github.io/live/net"><img src="https://yayanheeh.github.io/live/logo/net.jpg" width="100" height="50"></a></li>
+    <li class="list-group-item"><a href="https://yayanheeh.github.io/live/kompas"><img src="https://yayanheeh.github.io/live/logo/kompas.jpg" width="100" height="50"></a></li>
+	  <li class="list-group-item"><a href="https://yayanheeh.github.io/live/indosiar"><img src="https://yayanheeh.github.io/live/logo/indosiar.jpg" width="100" height="50"></a></li>
+    
+  </ul>  
 </div>
 
- 
-	<table class="table table-striped">
-   
-    <tbody>
-	    <tr><center> <b>Chanel TV Online Indonesia</b><br/></center>
-		    </tr>
-      <tr>
-        <td> <a href="https://yayanheeh.github.io/live/global"><img src="https://yayanheeh.github.io/live/logo/gtv.jpg" width="100" height="50"></a> </td>
-        <td><a href="https://yayanheeh.github.io/live/rtv"><img src="https://yayanheeh.github.io/live/logo/rtv.jpg" width="100" height="50"></a></td>
-        <td><a href="https://yayanheeh.github.io/live/rcti"><img src="https://yayanheeh.github.io/live/logo/rcti.jpg" width="100" height="50"></a></td> </tr>
-        <tr>
-        <td> <a href="https://yayanheeh.github.io/live/tvri"><img src="https://yayanheeh.github.io/live/logo/tvri.jpg" width="100" height="50"></a> </td>
-        <td><a href="https://yayanheeh.github.io/live/antv"><img src="https://yayanheeh.github.io/live/logo/antv.jpg" width="100" height="50"></a></td>
-        <td><a href="https://yayanheeh.github.io/live/sctv"><img src="https://yayanheeh.github.io/live/logo/sctv.jpg" width="100" height="50"></a></td> </tr>
-      <tr>
-        <td> <a href="https://yayanheeh.github.io/live/tvone"><img src="https://yayanheeh.github.io/live/logo/tvone.jpg" width="100" height="50"></a> </td>
-        <td><a href="https://yayanheeh.github.io/live/trans"><img src="https://yayanheeh.github.io/live/logo/trans.jpg" width="100" height="50"></a></td>
-        <td><a href="https://yayanheeh.github.io/live/inews"><img src="https://yayanheeh.github.io/live/logo/inews.jpg" width="100" height="50"></a></td></tr>
-    <tr>
-        <td> <a href="https://yayanheeh.github.io/live/mnc"><img src="https://yayanheeh.github.io/live/logo/mnc.jpg" width="100" height="50"></a> </td>
-        <td><a href="https://yayanheeh.github.io/live/metro"><img src="https://yayanheeh.github.io/live/logo/metro.jpg" width="100" height="50"></a></td>
-        <td><a href="https://yayanheeh.github.io/live/trans7"><img src="https://yayanheeh.github.io/live/logo/trans7.jpg" width="100" height="50"></a></td>   </tr>
-    <tr>
-        <td> <a href="https://yayanheeh.github.io/live/net"><img src="https://yayanheeh.github.io/live/logo/net.jpg" width="100" height="50"></a> </td>
-        <td><a href="https://yayanheeh.github.io/live/kompas"><img src="https://yayanheeh.github.io/live/logo/kompas.jpg" width="100" height="50"></a></td>
-        <td><a href="https://yayanheeh.github.io/live/indosiar"><img src="https://yayanheeh.github.io/live/logo/indosiar.jpg" width="100" height="50"></a></td>
-      </tr>
-
-      
-    </tbody>
-  </table>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/599af5b4dbb01a218b4dd7fa/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
 <script>
-$(window).on('load', function () {
-    var $preloader = $('#page-preloader'),
-        $spinner   = $preloader.find('.spinner');
-    $spinner.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
 });
 </script>
 
 </body>
-
-  
 </html>
 
-
-
+	
+ 
