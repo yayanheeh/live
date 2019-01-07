@@ -1,55 +1,11 @@
  
  
-<!doctype html>
 
-<html>
+<video width="640" height="360" id="player1" preload="none">
 
-<head>
-  <meta charset="utf-8">
+	<!-- Pseudo HTML5 -->
+	<source type="application/x-mpegURL" src="http://210.210.155.35/session/687d0a28-b723-11e8-a6e4-b82a72d63267/qwr9ew/s/s05/01.m3u8">
 
-  <title>Flowplayer · iframe src</title>
 
-  <!-- The Flowplayer skin -->
-  <link rel="stylesheet" href="//releases.flowplayer.org/7.2.4/skin/skin.css">
+</video>
 
-<style>
-body, html {
-  /* no scrollbars */
-  overflow: hidden;
-
-  /* pin player to top left corner of page/iframe */
-  margin: 0;
-  padding: 0;
-}
-</style>
-
-  <!-- Flowplayer depends on jquery for VIDEO tag based installations -->
-  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-  <!-- Flowplayer library -->
-  <script src="//releases.flowplayer.org/7.2.4/flowplayer.min.js"></script>
-  <!-- The hlsjs plugin (light) for playback of HLS without Flash in modern browsers -->
-  <script src="//releases.flowplayer.org/hlsjs/flowplayer.hlsjs.light.min.js"></script>
-
-<script>
-flowplayer.conf = {
-  fullscreen: true,
-  // iOS allows only native fullscreen from within iframes
-  native_fullscreen: true
-};
-</script>
-
-</head>
-
-<body>
-
-<div class="flowplayer" data-ratio="0.4167">
-
-   <video>
-<source type="application/x-mpegurl" src="http://210.210.155.35/session/687d0a28-b723-11e8-a6e4-b82a72d63267/qwr9ew/s/s05/01.m3u8">
- </video>
-
-</div>
-
-</body>
-</html>
-    
