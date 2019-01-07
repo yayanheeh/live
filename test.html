@@ -1,46 +1,42 @@
  
    
- <div style="width: 100%;display: block;float: left;    --height: 500px; " class=" ">
-
-
-<div id="My_m3u8" class="targetDiv" style="display: ;">
-  <script src="https://jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js"></script>
-
-<div id="mainplayer16921" style="position: relative; display: block; width: 100%; height: 450px;"></div>
-<script type="text/javascript">
-    jwplayer("mainplayer16921").setup({
-        file: " http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/chunklist_w2098702963_b1492000_sleng.m3u8",
-       width: "100%",      
-   height: "450",		 
-		 autostart: true,
-		 mute: true ,//optional, but recommended
-		tag: "Metro Tv",
-		//stretch: "exactfit",  
-       
-		title: 'Metro Tv',
-        autostart: "true",
-        primary: "flash",
-		//autostretch:'true',
-		logo: {
-		position: 'top-left',
-    margin: '0',
-        file: "",
-		height: "50",
-        link: "/wp-content/themes/atahualpa2/images/logo.png"
-    },
-        flashplayer: "http://p.jwpcdn.com/6/12/jwplayer.flash.swf",
-		 tracks: {
-                file: "thumbnails.vtt",
-                kind: "thumbnails"
-            },
-		//aspectratio: ""
-    });
-
- 
-   
-
-
-</script>
-
-</div>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>videojs-contrib-hls embed</title>
   
+  <!--
+
+  Uses the latest versions of video.js and videojs-http-streaming.
+
+  To use specific versions, please change the URLs to the form:
+
+  <link href="https://unpkg.com/video.js@6.7.1/dist/video-js.css" rel="stylesheet">
+  <script src="https://unpkg.com/video.js@6.7.1/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming@0.9.0/dist/videojs-http-streaming.js"></script>
+
+  -->
+
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Video.js Example Embed</h1>
+
+  <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="640" height="268">
+    <source src="http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/chunklist_w2098702963_b1492000_sleng.m3u8" type="application/x-mpegURL">
+  </video-js>
+  
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
+  
+  <script>
+    var player = videojs('my_video_1');
+  </script>
+  
+</body>
+</html>
+
+
+
+
