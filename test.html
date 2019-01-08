@@ -1,57 +1,29 @@
  
    
- 
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Sagah TV</title>
-    <style>
-        video {
-  object-fit: fill;
-}
-    </style>
-  </head>
-  <body>
-            <div id="player-wrapper"></div>
-        <script defer src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
-        <script defer src="https://yt.sagahtv.me/ch/clapprads.js"></script>
-        <script>
-            window.addEventListener('load', function() {
-                var playerElement = document.getElementById("player-wrapper");
-                var player = new Clappr.Player({
-                    source: 'http://videoplayer.vodobox.com/vodobox_player.php?vid=http%3A%2F%2F192.240.127.34%3A1935%2Flive%2Fcs11.stream%2Fmedia_1254.m3u8&img=&play=auto',
-                    baseUrl: 'https://yt.sagahtv.me',
-                    watermark: 'https://4.bp.blogspot.com/-aez4-iK49G8/Wpq6F8OQ6zI/AAAAAAAAATU/PveD14M5E1AXF429itre5qv6RteyEvflwCK4BGAYYCw/s1600/logo.png', size: '300', margin: '500', position: 'bottom-left', top: '-1000px',
-                    height: '100%',
-                    width: '100%',
-                    plugins: [ClapprAds],
-                    ads: {
-                        preRoll: {
-                            src: 'https://yt.sagahtv.me/ch/sagahtv.mp4',
-                            skip: true,
-                            timeout: 5
-                        },
-                        text: {
-                            wait: 'Wait % seconds...',
-                            skip: 'Skip >'
-                        }
-                    }
-                });
-                player.attachTo(playerElement);
-            });
-        </script>
-  </body>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75035133-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+<meta charset=utf-8 />
+<title>Video</title>
 
-  gtag('config', 'UA-75035133-1');
-</script>
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+ <script src="https://github.com/videojs/videojs-contrib-media-sources/releases/download/v0.1.0/videojs-media-sources.js"></script>
+  <script src="https://github.com/videojs/videojs-contrib-hls/releases/download/v0.11.2/videojs.hls.min.js"></script>
+
+</head>
+<body>
+  <h1>Video</h1>
+
+  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268" 
+  data-setup='{}'>
+    <source src="http://iphone-streaming.ustream.tv/uhls/3064708/streams/live/iphone/playlist.m3u8" type='video/mp4'>
+  </video>
+
+  <script>
+  </script>
+
+</body>
 </html>
 
-
-
-
+  
