@@ -1,6 +1,57 @@
  
    
  
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sagah TV</title>
+    <style>
+        video {
+  object-fit: fill;
+}
+    </style>
+  </head>
+  <body>
+            <div id="player-wrapper"></div>
+        <script defer src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+        <script defer src="https://yt.sagahtv.me/ch/clapprads.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+                var playerElement = document.getElementById("player-wrapper");
+                var player = new Clappr.Player({
+                    source: 'https://sagahpremium.rumahstreaming.stream/rcti/lives/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9MS84LzIwMTkgODoyMzoyMCBBTSZoYXNoX3ZhbHVlPXJJbkFXNUV3b0FoRlh3aGlaVjgzTEE9PSZ2YWxpZG1pbnV0ZXM9NDUmaWQ9NQ==',
+                    baseUrl: 'https://yt.sagahtv.me',
+                    watermark: 'https://4.bp.blogspot.com/-aez4-iK49G8/Wpq6F8OQ6zI/AAAAAAAAATU/PveD14M5E1AXF429itre5qv6RteyEvflwCK4BGAYYCw/s1600/logo.png', size: '300', margin: '500', position: 'bottom-left', top: '-1000px',
+                    height: '100%',
+                    width: '100%',
+                    plugins: [ClapprAds],
+                    ads: {
+                        preRoll: {
+                            src: 'https://yt.sagahtv.me/ch/sagahtv.mp4',
+                            skip: true,
+                            timeout: 5
+                        },
+                        text: {
+                            wait: 'Wait % seconds...',
+                            skip: 'Skip >'
+                        }
+                    }
+                });
+                player.attachTo(playerElement);
+            });
+        </script>
+  </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75035133-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-75035133-1');
+</script>
+</html>
 
 
-<iframe id="iframe_player" src="http://videoplayer.vodobox.com/vodobox_player.php?vid=http%3A%2F%2F192.240.127.34%3A1935%2Flive%2Fcs11.stream%2Fmedia_1254.m3u8&img=&play=auto" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+
+
