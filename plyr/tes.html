@@ -1,42 +1,97 @@
-﻿<!DOCTYPE html>
-<html lang="en" >
+    <script type="text/javascript">
+        $(function () {
 
-<head>
-  <meta charset="UTF-8">
-  <title>Plyr Demo</title>
-  
-  
-  <link rel='stylesheet' href='https://cdn.plyr.io/3.4.6/plyr.css'>
+            var d = new Date(),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear();
+            if (month.length < 2) month = '0' + month;
+            if (day.length < 2) day = '0' + day;
+            var firstDate = [year, month, day].join('-');
+            var token = 'lWKAaT8SlGzovLYKIjCZ6ukzmj4Fq41eV8xh7xQw';
 
-      <link rel="stylesheet" href="css/style.css">
+            $.ajax({
+                type: "post",
+                dataType: "json",
+                url: "https://www.rcti.tv/schedule/data",
+//                url: "http://webcms.mncgroup.com/api_jadwal_rctitv.php",
+                data: {
+                    date: firstDate,
+                    _token: token
+                },
+                success: function (data) {
+                    $('tbody.eventlist').html('');
+                    var startHeight = 456;
+                    $.each(data, function (id, value) {
+                        startHeight = startHeight + 20;
+                        var time = value.START_TIME.substr(0, 2) + ':' + value.START_TIME.substr(2, 2) + ':' + value.START_TIME.substr(4, 2);
+                        var uptotime = value.END_TIME.substr(0, 2) + ':' + value.END_TIME.substr(2, 2) + ':' + value.END_TIME.substr(4, 2);
+                        $('tbody.eventlist').append(
+                            '                            <tr>\n' +
+                            '                                <td style="text-align: center;" class="col-md-3 rjamtayang">' + time + ' - ' + uptotime + '</td>\n' +
+                            '                                <td class="col-md-9 rprogram">' + value.FILM_POC_TITLE + '</td>\n' +
+                            '                            </tr>'
+                        );
+                    });
+                    $('.page-title').css({'height': startHeight + "px"});
+                },
+                error: function () {
+                    alert('Failed to load data.');
+                }
+            });
 
-  
-</head>
+            $("#datepicker").datepicker({
+                changeMonth: false,
+                changeYear: false,
+                stepMonths: 0,
+                dateFormat: 'yy-mm-dd',
+                onSelect: function (date) {
+                    $.ajax({
+                        type: "post",
+                        dataType: "json",
+                        url: "https://www.rcti.tv/schedule/data",
+//                        url: "http://webcms.mncgroup.com/api_jadwal_rctitv.php",
+                        data: {
+                            date: date,
+                            _token: token
+                        },
+                        success: function (data) {
+                            var newdate = new Date(date),
+                                nmonth = '' + (newdate.getMonth() + 1),
+                                nday = '' + newdate.getDate(),
+                                nyear = newdate.getFullYear();
 
-<body>
+                            var m_names = ['', "January", "February", "Maret",
+                                "April", "May", "June", "July", "August", "September",
+                                "October", "November", "December"];
+                            if (nday < 10) {
+                                nday = '0' + nday;
+                            }
 
+                            $('.judulTanggal').html([nday, m_names[nmonth], nyear].join(' '));
 
-  <div class="container">
-<video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
-                <!-- Video files -->
-                <source src="https://www.metube.id/embed/193/?type=live" size="576">
-               
-                <!-- Caption files -->
-                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-                    default>
-                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+                            $('tbody.eventlist').html('');
+                            var startHeight = 456;
+                            $.each(data, function (id, value) {
+                                startHeight = startHeight + 20;
+                                var time = value.START_TIME.substr(0, 2) + ':' + value.START_TIME.substr(2, 2) + ':' + value.START_TIME.substr(4, 2);
+                                var uptotime = value.END_TIME.substr(0, 2) + ':' + value.END_TIME.substr(2, 2) + ':' + value.END_TIME.substr(4, 2);
+                                $('tbody.eventlist').append(
+                                    '                            <tr>\n' +
+                                    '                                <td style="text-align: center;" class="col-md-3 rjamtayang">' + time + ' - ' + uptotime + '</td>\n' +
+                                    '                                <td class="col-md-9 rprogram">' + value.FILM_POC_TITLE + '</td>\n' +
+                                    '                            </tr>'
+                                );
+                            });
+                            $('.page-title').css({'height': startHeight + "px"});
+                        },
+                        error: function () {
+                            alert('Failed to load data.');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 
-                <!-- Fallback for browsers that don't support the <video> element -->
-               
-  </div>
-</div>
-  <script src='https://cdn.plyr.io/3.4.6/plyr.js'></script>
-
-  
-
-    <script  src="js/index.js"></script>
-
-
-</body>
-
-</html>
+ 
